@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-install-package-without-root" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/03/install-package-without-root/" class="article-date">
+  <time datetime="2020-05-03T11:25:25.000Z" itemprop="datePublished">2020-05-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/03/install-package-without-root/">install-package-without-root</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Apt-get"><a href="#Apt-get" class="headerlink" title="Apt-get"></a>Apt-get</h1><h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>I used the server of school, but I donnot have the root previledge, and when I have to install some packages, I have to transfer to my own server, which is really slow. :(</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">apt-get <span class="built_in">source</span> package</span><br><span class="line"><span class="built_in">cd</span> package</span><br><span class="line">./configure --prefix=<span class="variable">$HOME</span></span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/05/03/install-package-without-root/" data-id="ck9qz0enz0000b8ub39j39si8" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/apt-get/" rel="tag">apt-get</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="blog-git-bash" class="article article-type-blog" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/03/git-bash/" class="article-date">
+  <time datetime="2020-05-03T00:18:18.000Z" itemprop="datePublished">2020-05-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/03/git-bash/">git-bash</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Changing-the-default-theme-and-font-of-gitbash-on-win"><a href="#Changing-the-default-theme-and-font-of-gitbash-on-win" class="headerlink" title="Changing the default theme and font of gitbash on win"></a>Changing the default theme and font of gitbash on win</h1><ol>
+<li>cd ~</li>
+<li>vim .minttyrc</li>
+<li>write the codes below<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">Font&#x3D;Consolas</span><br><span class="line">FontHeight&#x3D;14</span><br><span class="line"></span><br><span class="line">ForegroundColour&#x3D;131,148,150</span><br><span class="line">BackgroundColour&#x3D;0,43,54</span><br><span class="line">CursorColour&#x3D;220,50,47</span><br><span class="line"></span><br><span class="line">Black&#x3D;7,54,66</span><br><span class="line">BoldBlack&#x3D;0,43,54</span><br><span class="line">Red&#x3D;220,50,47</span><br><span class="line">BoldRed&#x3D;203,75,22</span><br><span class="line">Green&#x3D;133,153,0</span><br><span class="line">BoldGreen&#x3D;88,110,117</span><br><span class="line">Yellow&#x3D;181,137,0</span><br><span class="line">BoldYellow&#x3D;101,123,131</span><br><span class="line">Blue&#x3D;38,139,210</span><br><span class="line">BoldBlue&#x3D;131,148,150</span><br><span class="line">Magenta&#x3D;211,54,130</span><br><span class="line">BoldMagenta&#x3D;108,113,196</span><br><span class="line">Cyan&#x3D;42,161,152</span><br><span class="line">BoldCyan&#x3D;147,161,161</span><br><span class="line">White&#x3D;238,232,213</span><br><span class="line">BoldWhite&#x3D;253,246,227</span><br><span class="line">BoldAsFont&#x3D;-1</span><br><span class="line">FontSmoothing&#x3D;full</span><br><span class="line">FontWeight&#x3D;700</span><br><span class="line">FontIsBold&#x3D;yes</span><br><span class="line">Locale&#x3D;C</span><br><span class="line">Charset&#x3D;UTF-8</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/05/03/git-bash/" data-id="ck9qb6o6k0000bwuba2be97ua" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gitbash/" rel="tag">gitbash</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/theme/" rel="tag">theme</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-pip" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/22/pip/" class="article-date">
+  <time datetime="2020-04-22T04:48:34.000Z" itemprop="datePublished">2020-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/22/pip/">pip</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>pip install –ignore-installed –upgrade tensorflow==1.0</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/22/pip/" data-id="ck9qb6o7f0001bwubdu0k4h3m" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/conda/" rel="tag">conda</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pip/" rel="tag">pip</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-venv" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/20/venv/" class="article-date">
+  <time datetime="2020-04-20T05:22:47.000Z" itemprop="datePublished">2020-04-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/20/venv/">venv, ubuntu, jupyter, git</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Some-thinking-about-venv"><a href="#Some-thinking-about-venv" class="headerlink" title="Some thinking about venv"></a>Some thinking about venv</h1><ul>
+<li><p>‘venv’ is used to create a virtual environment, where we can use python seperate from the origianl env.</p>
+<ul>
+<li>bin/activate is a file used for activating the virtual environment</li>
+</ul>
+</li>
+<li><p>Usage</p>
+<ul>
+<li><p>make a working director (eg. <code>myvenv</code>)</p>
+<ul>
+<li>mkdir -p(will check along the path, if not exist, it will create) venvs(means all my venvs)/myvenv</li>
+<li>cd ./venvs/myvenv (go into the virtual env)</li>
+</ul>
+</li>
+<li><p>create venv</p>
+<ul>
+<li>python3 -m venv .<ul>
+<li><code>.</code> means the place you wang to create <code>bin/ scripts/ ...</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>edit your codes, or git clone <code>codes src</code></p>
+</li>
+<li><p>activate venv</p>
+<ul>
+<li>source bin/activate</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+        
+          <p class="article-more-link">
+            <a href="/2020/04/20/venv/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/20/venv/" data-id="ck982tr060001usubbn1dfirc" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jupyter/" rel="tag">jupyter</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ubuntu/" rel="tag">ubuntu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/venv/" rel="tag">venv</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Ideas" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/16/Ideas/" class="article-date">
+  <time datetime="2020-04-16T04:05:30.000Z" itemprop="datePublished">2020-04-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/16/Ideas/">Ideas</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="May-be-emotion-analysis-can-be-applied-to-stock-market-it-can-analyse-market-emotions"><a href="#May-be-emotion-analysis-can-be-applied-to-stock-market-it-can-analyse-market-emotions" class="headerlink" title="May be emotion analysis can be applied to stock market, it can analyse market emotions"></a>May be emotion analysis can be applied to stock market, it can analyse market emotions</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/16/Ideas/" data-id="ck982tqz40000usub2wv32iqs" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ideas/" rel="tag">ideas</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Jupyter-ssh" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/11/Jupyter-ssh/" class="article-date">
+  <time datetime="2020-04-11T05:07:44.000Z" itemprop="datePublished">2020-04-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/11/Jupyter-ssh/">Jupyter-ssh</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="通过SSH远程使用jupyter-notebook"><a href="#通过SSH远程使用jupyter-notebook" class="headerlink" title="通过SSH远程使用jupyter notebook"></a>通过SSH远程使用jupyter notebook</h2><ul>
+<li><p>Step-1: 在远程服务器上，启动jupyter notebooks服务：</p>
+<ul>
+<li>jupyter notebook –no-browser –port=8889</li>
+</ul>
+</li>
+<li><p>Step-2: 在本地机器的Terminal中启动SSH：</p>
+<ul>
+<li>ssh -N -f -L localhost:8888:localhost:8889 remote_user@remote_host<br>其中： -N 告诉SSH没有命令要被远程执行； -f 告诉SSH在后台执行； -L 是指定port forwarding的配置，远端端口是8889，本地的端口号的8888。remote_user@remote_host 用实际的远程帐户和远程地址替换</li>
+</ul>
+</li>
+<li><p>Step-3: 打开浏览器，输入地址：<a href="http://localhost:8888/" target="_blank" rel="noopener">http://localhost:8888/</a></p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">如果需要临时指定一些设置， 使用 &#39;--&#39; + property-name + &#39;&#x3D;&#39; + value</span><br><span class="line">eg.  --notebook-dir &#x3D; &#x2F;root&#x2F;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/11/Jupyter-ssh/" data-id="ck8v5sfml000028ubhgsp7459" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jupyter/" rel="tag">jupyter</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/10/Hexo/" class="article-date">
+  <time datetime="2020-04-10T10:45:04.000Z" itemprop="datePublished">2020-04-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/10/Hexo/">Python-and-Linux-Version, Hexo Usage</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="I-Uses-Ubuntu-System-how-to-change-my-python-version"><a href="#I-Uses-Ubuntu-System-how-to-change-my-python-version" class="headerlink" title="I Uses Ubuntu System, how to change my python version"></a>I Uses Ubuntu System, how to change my python version</h2><ul>
+<li>Default version: python 2.7</li>
+<li>Also avaliable: python 3.6.8</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ubuntu 自带两个python版本，一个是python2一个是python3 默认版本是python2的，想要更改ubuntu python3 为默认版本</span><br><span class="line"></span><br><span class="line">Use the follwing 2 lines:</span><br><span class="line">- sudo update-alternatives --install &#x2F;usr&#x2F;bin&#x2F;python python &#x2F;usr&#x2F;bin&#x2F;python2 100</span><br><span class="line">- sudo update-alternatives --install &#x2F;usr&#x2F;bin&#x2F;python python &#x2F;usr&#x2F;bin&#x2F;python3 150</span><br></pre></td></tr></table></figure>
+
+<h2 id="About-‘yum-install’-or-‘apt-get’"><a href="#About-‘yum-install’-or-‘apt-get’" class="headerlink" title="About ‘yum install’ or ‘apt-get’"></a>About ‘yum install’ or ‘apt-get’</h2><ul>
+<li>在centos下用yum install package</li>
+<li>yum和apt-get的区别：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">一般来说著名的linux系统基本上分两大类：</span><br><span class="line">RedHat系列：Redhat、Centos、Fedora等 </span><br><span class="line">Debian系列：Debian、Ubuntu等</span><br></pre></td></tr></table></figure>
+<ul>
+<li>RedHat系列<ul>
+<li>常见的安装包格式 rpm包,安装rpm包的命令是“rpm -参数”</li>
+<li>包管理工具 yum</li>
+<li>支持tar包</li>
+</ul>
+</li>
+<li>Debian系列<ul>
+<li>常见的安装包格式 deb包,安装deb包的命令是“dpkg -参数”</li>
+<li>包管理工具 apt-get</li>
+<li>支持tar包</li>
+</ul>
+</li>
+</ul>
+<h2 id="Checking-my-system-version"><a href="#Checking-my-system-version" class="headerlink" title="Checking my system version"></a>Checking my system version</h2><ul>
+<li>cat /etc/redhat-release</li>
+<li>CentOS or Ubuntu…</li>
+</ul>
+        
+          <p class="article-more-link">
+            <a href="/2020/04/10/Hexo/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/10/Hexo/" data-id="ck8u2f2eg0000vcubfncx8vu0" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-My-First-Blog" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/19/My-First-Blog/" class="article-date">
+  <time datetime="2020-03-19T12:44:41.000Z" itemprop="datePublished">2020-03-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/19/My-First-Blog/">My-First-Blog</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h1><h2 id="Greetings"><a href="#Greetings" class="headerlink" title="Greetings"></a>Greetings</h2><p>The world is beautiful, isn’t it? And with the development of technology, our future will become even better!</p>
+<h2 id="Vision"><a href="#Vision" class="headerlink" title="Vision"></a>Vision</h2><ul>
+<li>Using Ai to power human! Creating a society filled with happiness, freedom, and creativity!</li>
+</ul>
+        
+          <p class="article-more-link">
+            <a href="/2020/03/19/My-First-Blog/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/19/My-First-Blog/" data-id="ck8u28mq10001qoub5hb420pn" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/beginner/" rel="tag">beginner</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/19/hello-world/" class="article-date">
+  <time datetime="2020-03-19T12:21:19.630Z" itemprop="datePublished">2020-03-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/19/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/19/hello-world/" data-id="ck8u28mpu0000qoub23p292mq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/apt-get/" rel="tag">apt-get</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/beginner/" rel="tag">beginner</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/conda/" rel="tag">conda</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gitbash/" rel="tag">gitbash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ideas/" rel="tag">ideas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jupyter/" rel="tag">jupyter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pip/" rel="tag">pip</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/theme/" rel="tag">theme</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/" rel="tag">ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/venv/" rel="tag">venv</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/apt-get/" style="font-size: 10px;">apt-get</a> <a href="/tags/beginner/" style="font-size: 10px;">beginner</a> <a href="/tags/conda/" style="font-size: 10px;">conda</a> <a href="/tags/gitbash/" style="font-size: 10px;">gitbash</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/ideas/" style="font-size: 10px;">ideas</a> <a href="/tags/jupyter/" style="font-size: 20px;">jupyter</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/pip/" style="font-size: 10px;">pip</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/theme/" style="font-size: 10px;">theme</a> <a href="/tags/ubuntu/" style="font-size: 10px;">ubuntu</a> <a href="/tags/venv/" style="font-size: 10px;">venv</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/05/03/install-package-without-root/">install-package-without-root</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/03/git-bash/">git-bash</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/22/pip/">pip</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/20/venv/">venv, ubuntu, jupyter, git</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/16/Ideas/">Ideas</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

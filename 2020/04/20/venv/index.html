@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>venv, ubuntu, jupyter, git | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Some thinking about venv ‘venv’ is used to create a virtual environment, where we can use python seperate from the origianl env.  bin&#x2F;activate is a file used for activating the virtual environment   U">
+<meta property="og:type" content="article">
+<meta property="og:title" content="venv, ubuntu, jupyter, git">
+<meta property="og:url" content="http://yoursite.com/2020/04/20/venv/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Some thinking about venv ‘venv’ is used to create a virtual environment, where we can use python seperate from the origianl env.  bin&#x2F;activate is a file used for activating the virtual environment   U">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-20T05:22:47.000Z">
+<meta property="article:modified_time" content="2020-05-03T13:25:25.605Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="jupyter">
+<meta property="article:tag" content="venv">
+<meta property="article:tag" content="ubuntu">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-venv" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/20/venv/" class="article-date">
+  <time datetime="2020-04-20T05:22:47.000Z" itemprop="datePublished">2020-04-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      venv, ubuntu, jupyter, git
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Some-thinking-about-venv"><a href="#Some-thinking-about-venv" class="headerlink" title="Some thinking about venv"></a>Some thinking about venv</h1><ul>
+<li><p>‘venv’ is used to create a virtual environment, where we can use python seperate from the origianl env.</p>
+<ul>
+<li>bin/activate is a file used for activating the virtual environment</li>
+</ul>
+</li>
+<li><p>Usage</p>
+<ul>
+<li><p>make a working director (eg. <code>myvenv</code>)</p>
+<ul>
+<li>mkdir -p(will check along the path, if not exist, it will create) venvs(means all my venvs)/myvenv</li>
+<li>cd ./venvs/myvenv (go into the virtual env)</li>
+</ul>
+</li>
+<li><p>create venv</p>
+<ul>
+<li>python3 -m venv .<ul>
+<li><code>.</code> means the place you wang to create <code>bin/ scripts/ ...</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>edit your codes, or git clone <code>codes src</code></p>
+</li>
+<li><p>activate venv</p>
+<ul>
+<li>source bin/activate</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<a id="more"></a>
+
+<h1 id="Venv-wrapper"><a href="#Venv-wrapper" class="headerlink" title="Venv wrapper"></a>Venv wrapper</h1><ol>
+<li><p>install packages</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install virtualenv</span><br><span class="line">pip install virtualenvwrapper</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>make dir, used for storing venvs &amp; relevant files</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir ~/.virtualenvs</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Modify .bashrc</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">vi ~/.bashrc</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> WORKON_HOME=<span class="variable">$HOME</span> (the path to user<span class="string">'s home, not necessarily root) /.virtualenvs  # 所有虚拟环境存储的目录</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">i. use find -name virtualenvwrapper.sh</span></span><br><span class="line"><span class="string">ii. source (path to virtualenvwrapper.sh), which is found in '</span>i<span class="string">'</span></span><br><span class="line"><span class="string">raw: /usr/local/bin/virtualenvwrapper.sh</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># activate</span></span><br><span class="line"><span class="string">source ~/.bashrc</span></span><br></pre></td></tr></table></figure></li>
+<li><p>mkvirtualenv v1 (stored in ./virtualenvs)</p>
+</li>
+<li><p>workon v1<br>from <a href="https://blog.csdn.net/qq_19339041/article/details/80045273" target="_blank" rel="noopener">https://blog.csdn.net/qq_19339041/article/details/80045273</a></p>
+</li>
+</ol>
+<h1 id="Ubuntu-apt-get"><a href="#Ubuntu-apt-get" class="headerlink" title="Ubuntu apt-get"></a>Ubuntu apt-get</h1><ul>
+<li><p><code>apt-get update</code> will check what can be updated</p>
+<ul>
+<li>will return <strong>Run ‘apt list –upgradable’ to see them</strong></li>
+</ul>
+</li>
+<li><p><code>apt-get upgrade</code> will carry out the update action</p>
+</li>
+</ul>
+<h1 id="xvfb"><a href="#xvfb" class="headerlink" title="xvfb"></a>xvfb</h1><ul>
+<li><p>Application: create a ‘fake’ screen on remote server</p>
+</li>
+<li><p>Command: xvfb-run -s “-screen 0 1400x900x24” jupyter notebook</p>
+</li>
+<li><p>I used it for reinforcement env on server, and connect it using ssh</p>
+</li>
+</ul>
+<h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1><ul>
+<li><p><code>git clone</code> is different from <code>zip download</code></p>
+</li>
+<li><p><code>git clone</code> will also download the history versions and information</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;clone&quot; uses git software on your computer to download the source code and it&#39;s entire version history.</span><br><span class="line"></span><br><span class="line">&quot;download zip&quot; creates a zip file of just the current version of the source code for you to download - the project history is not included.</span><br></pre></td></tr></table></figure>
+
+<h1 id="jupyter"><a href="#jupyter" class="headerlink" title="jupyter"></a>jupyter</h1><ul>
+<li><p>jupyter has some user-defined properties, if we simply use ‘jupyter notebook’, it will use the default settings</p>
+<ul>
+<li>eg. I used to use <code>jupyter notebook --no-browser --port=xxxx</code> on school server</li>
+</ul>
+</li>
+<li><p>Steps:</p>
+<ul>
+<li><p>generate config files(<code>jupyter_notebook_config.py</code>), so that the original one will be overwritten</p>
+<ul>
+<li><code>cmd: jupyter notebook --generate-config</code></li>
+<li><code>Overwrite /root/.jupyter/jupyter_notebook_config.py with default config? [y/N]y</code></li>
+<li><code>Writing default config to: /root/.jupyter/jupyter_notebook_config.py</code></li>
+</ul>
+</li>
+<li><p>edit the config file</p>
+<ul>
+<li>vim /root/.jupyter/jupyter_notebook_config.py<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">c.NotebookApp.allow_root &#x3D; True</span><br><span class="line">-- used for Running as root is not recommended. Use --allow-root to bypass</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">## 登录密码，默认没有密码，所以每次启动服务器后都会产生一个随机数token，配置了密码后就不用每次使用随机数token了</span><br><span class="line">c.NotebookApp.password &#x3D; &#39;&#39;</span><br><span class="line"> </span><br><span class="line">## 服务的端口，用默认的8888即可</span><br><span class="line">c.NotebookApp.port &#x3D; 8888</span><br><span class="line"> </span><br><span class="line">## 是否需要自动弹出浏览器，服务器端一般不需要</span><br><span class="line">c.NotebookApp.open_browser &#x3D; False</span><br><span class="line"></span><br><span class="line">## The directory to use for notebooks and kernels.</span><br><span class="line">## 不设置的话就是启动命令所在的目录</span><br><span class="line">c.NotebookApp.notebook_dir &#x3D; &#39;&#x2F;root&#x2F;...&#39; (the place you want)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>jupyter notebook –generate-config –allow-root</p>
+</li>
+</ul>
+<h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><ul>
+<li><p>IF you happen to meet ‘fatal: Could not read from remote repository.’, then probably you have accidentally removed your <code>rsa_key</code> files</p>
+</li>
+<li><p>Solution</p>
+<ul>
+<li><p>set name and email</p>
+<ul>
+<li>git config –global user.name “yourname”</li>
+<li>git config –global user.email “<a href="mailto:your@email.com">your@email.com</a>“</li>
+</ul>
+</li>
+<li><p>comment the line of the target host ip (or remove <code>.ssh/known_hosts</code>)</p>
+</li>
+<li><p>ssh-keygen -t rsa -C ‘your@email.com(填写github对应的邮箱)’</p>
+<ul>
+<li><code>Enter</code> several times</li>
+</ul>
+</li>
+<li><p>Go to github</p>
+<ul>
+<li>create new <code>SSH KEY</code>, and paste the connent in <code>id_rsa.pub</code> into it</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/20/venv/" data-id="ck982tr060001usubbn1dfirc" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jupyter/" rel="tag">jupyter</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ubuntu/" rel="tag">ubuntu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/venv/" rel="tag">venv</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/04/22/pip/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          pip
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/04/16/Ideas/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Ideas</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/apt-get/" rel="tag">apt-get</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/beginner/" rel="tag">beginner</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/conda/" rel="tag">conda</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gitbash/" rel="tag">gitbash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ideas/" rel="tag">ideas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jupyter/" rel="tag">jupyter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pip/" rel="tag">pip</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/theme/" rel="tag">theme</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/" rel="tag">ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/venv/" rel="tag">venv</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/apt-get/" style="font-size: 10px;">apt-get</a> <a href="/tags/beginner/" style="font-size: 10px;">beginner</a> <a href="/tags/conda/" style="font-size: 10px;">conda</a> <a href="/tags/gitbash/" style="font-size: 10px;">gitbash</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/ideas/" style="font-size: 10px;">ideas</a> <a href="/tags/jupyter/" style="font-size: 20px;">jupyter</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/pip/" style="font-size: 10px;">pip</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/theme/" style="font-size: 10px;">theme</a> <a href="/tags/ubuntu/" style="font-size: 10px;">ubuntu</a> <a href="/tags/venv/" style="font-size: 10px;">venv</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/05/03/install-package-without-root/">install-package-without-root</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/03/git-bash/">git-bash</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/22/pip/">pip</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/20/venv/">venv, ubuntu, jupyter, git</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/16/Ideas/">Ideas</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Python-and-Linux-Version, Hexo Usage | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="I Uses Ubuntu System, how to change my python version Default version: python 2.7 Also avaliable: python 3.6.8  12345ubuntu 自带两个python版本，一个是python2一个是python3 默认版本是python2的，想要更改ubuntu python3 为默认版本Use">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python-and-Linux-Version, Hexo Usage">
+<meta property="og:url" content="http://yoursite.com/2020/04/10/Hexo/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="I Uses Ubuntu System, how to change my python version Default version: python 2.7 Also avaliable: python 3.6.8  12345ubuntu 自带两个python版本，一个是python2一个是python3 默认版本是python2的，想要更改ubuntu python3 为默认版本Use">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-10T10:45:04.000Z">
+<meta property="article:modified_time" content="2020-04-10T10:50:24.913Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="hexo">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/10/Hexo/" class="article-date">
+  <time datetime="2020-04-10T10:45:04.000Z" itemprop="datePublished">2020-04-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Python-and-Linux-Version, Hexo Usage
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="I-Uses-Ubuntu-System-how-to-change-my-python-version"><a href="#I-Uses-Ubuntu-System-how-to-change-my-python-version" class="headerlink" title="I Uses Ubuntu System, how to change my python version"></a>I Uses Ubuntu System, how to change my python version</h2><ul>
+<li>Default version: python 2.7</li>
+<li>Also avaliable: python 3.6.8</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ubuntu 自带两个python版本，一个是python2一个是python3 默认版本是python2的，想要更改ubuntu python3 为默认版本</span><br><span class="line"></span><br><span class="line">Use the follwing 2 lines:</span><br><span class="line">- sudo update-alternatives --install &#x2F;usr&#x2F;bin&#x2F;python python &#x2F;usr&#x2F;bin&#x2F;python2 100</span><br><span class="line">- sudo update-alternatives --install &#x2F;usr&#x2F;bin&#x2F;python python &#x2F;usr&#x2F;bin&#x2F;python3 150</span><br></pre></td></tr></table></figure>
+
+<h2 id="About-‘yum-install’-or-‘apt-get’"><a href="#About-‘yum-install’-or-‘apt-get’" class="headerlink" title="About ‘yum install’ or ‘apt-get’"></a>About ‘yum install’ or ‘apt-get’</h2><ul>
+<li>在centos下用yum install package</li>
+<li>yum和apt-get的区别：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">一般来说著名的linux系统基本上分两大类：</span><br><span class="line">RedHat系列：Redhat、Centos、Fedora等 </span><br><span class="line">Debian系列：Debian、Ubuntu等</span><br></pre></td></tr></table></figure>
+<ul>
+<li>RedHat系列<ul>
+<li>常见的安装包格式 rpm包,安装rpm包的命令是“rpm -参数”</li>
+<li>包管理工具 yum</li>
+<li>支持tar包</li>
+</ul>
+</li>
+<li>Debian系列<ul>
+<li>常见的安装包格式 deb包,安装deb包的命令是“dpkg -参数”</li>
+<li>包管理工具 apt-get</li>
+<li>支持tar包</li>
+</ul>
+</li>
+</ul>
+<h2 id="Checking-my-system-version"><a href="#Checking-my-system-version" class="headerlink" title="Checking my system version"></a>Checking my system version</h2><ul>
+<li>cat /etc/redhat-release</li>
+<li>CentOS or Ubuntu…</li>
+</ul>
+<a id="more"></a>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><ul>
+<li><p>根目录命令行输入hexo new &lt;模板&gt; &lt;文章名&gt;新建文章</p>
+</li>
+<li><p>其中&lt;模板&gt;在scaffolds中，默认情况下有三个模板post、draft、page</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>功能</th>
+<th>路径</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>post</td>
+<td>新建文章</td>
+<td>/source/_posts/</td>
+</tr>
+<tr>
+<td>draft</td>
+<td>新建草稿</td>
+<td>/source/_drafts/</td>
+</tr>
+<tr>
+<td>page</td>
+<td>新建页面(标签页，分类页等)</td>
+<td>/source/</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 标题1 | 标题2   | 长长的标题3 | title 4 |</span><br><span class="line">| ----- | --------- | ----------- | ------- |</span><br><span class="line">| 内容1 | content 2 |             |         |</span><br><span class="line">| 行3  | line3     | column 3    |         |</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Source-Article"><a href="#Source-Article" class="headerlink" title="Source Article"></a>Source Article</h2><ul>
+<li><p>第一步：<br>找到source文件夹下的_posts，将markdown文件放在此文件夹中。<br>谨记需要在上传的markdown文档的首部添加如下信息：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title:      title</span><br><span class="line">date:       time</span><br><span class="line">categories: classification</span><br><span class="line">toc:        true    &#x2F;&#x2F;context</span><br><span class="line">---</span><br><span class="line">Note:</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>第二步：</p>
+<ul>
+<li>本地浏览一下:<ul>
+<li>cd进入自己Hexo的站点: </li>
+<li>hexo g</li>
+<li>hexo s<br><code>http://localhost:4000/</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>第三步：</p>
+</li>
+<li><p>若对自己的修改很满意，想要发布到github，可以继续执行命令：</p>
+<ul>
+<li>hexo clean</li>
+<li>hexo g</li>
+<li>hexo d</li>
+</ul>
+</li>
+</ul>
+<p>其中：</p>
+<p>```<br>hexo clean  清除缓存<br>hexo g      生成本地文件<br>hexo d      部署deployment</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/10/Hexo/" data-id="ck8u2f2eg0000vcubfncx8vu0" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/04/11/Jupyter-ssh/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Jupyter-ssh
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/03/19/My-First-Blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">My-First-Blog</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/apt-get/" rel="tag">apt-get</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/beginner/" rel="tag">beginner</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/conda/" rel="tag">conda</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gitbash/" rel="tag">gitbash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ideas/" rel="tag">ideas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jupyter/" rel="tag">jupyter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pip/" rel="tag">pip</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/theme/" rel="tag">theme</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/" rel="tag">ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/venv/" rel="tag">venv</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/apt-get/" style="font-size: 10px;">apt-get</a> <a href="/tags/beginner/" style="font-size: 10px;">beginner</a> <a href="/tags/conda/" style="font-size: 10px;">conda</a> <a href="/tags/gitbash/" style="font-size: 10px;">gitbash</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/ideas/" style="font-size: 10px;">ideas</a> <a href="/tags/jupyter/" style="font-size: 20px;">jupyter</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/pip/" style="font-size: 10px;">pip</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/theme/" style="font-size: 10px;">theme</a> <a href="/tags/ubuntu/" style="font-size: 10px;">ubuntu</a> <a href="/tags/venv/" style="font-size: 10px;">venv</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/05/03/install-package-without-root/">install-package-without-root</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/03/git-bash/">git-bash</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/22/pip/">pip</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/20/venv/">venv, ubuntu, jupyter, git</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/16/Ideas/">Ideas</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
